@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4e1ef735b.js" crossorigin="anonymous"></script>
+    <title>Trello</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Meu Trello
+        </h1>
+        <h2>
+            A fazeres
+        </h2>
+        <i class="fa-regular fa-circle-user" style="color: #ffffff;"></i>
+    </header>
+
+    <main>
+        <form id="adicionar-tarefa">
+            <!-- <label for="nova-tarefa">Nova tarefa:</label> -->
+            <input type="text" id="nova-tarefa" name="nova-tarefa" placeholder="Nova tarefa">
+            <button type="submit">
+                Adicionar
+            </button>
+        </form>
+
+        <div class="container">
+            <div class="coluna" id="fazer">
+            <h2>
+                A Fazer
+            </h2>
+            <ul class="tarefas" id="tarefas-fazer"></ul>
+        </div>
+
+        <div class="coluna" id="fazendo">
+            <h2>
+                Fazendo
+            </h2>
+            <ul class="tarefas" id="tarefas-fazendo"></ul>
+        </div>
+
+        <div class="coluna" id="feito">
+            <h2>
+                Feito
+            </h2>
+            <ul class="tarefas" id="tarefas-feito"></ul>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        @Copyright of Meu Trello
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
